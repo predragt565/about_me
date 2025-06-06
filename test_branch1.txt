@@ -1,2 +1,2 @@
-Hello World!
-Noch eine Änderung in feature_3
+Hello WELT!
+Ich bin eine neue Zeile!
