@@ -1,17 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage HTML/CSS</title>
+    <title>Profil - Predrag Trikic</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN für Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
+    <div class="container">
+        <header>
+            <h1> <span class="badge"></span></h1>
+            <p> </p>
+        </header>
 
-    <h1>Einstieg in HTML/CSS</h1>
-    <h2>Erste Schritte in HTML/CSS</h2>
-    <p>Meine erste GitHub Webseite</p>
+        <div class="page-layout">
+            <!-- LEFT PROFILE COLUMN -->
+            <div class="profile-container">
+                
+                <!-- Add more profile info here if needed -->
+            
+
+                <div id="profile">
+                    <div id="image">
+                        <img id="profile-photo" loading="lazy" aria-busy="false" src="https://profile-images.xing.com/images/88f715ea7338246e7fc2ff64aa131306-1/predrag-trikic.256x256.jpg" alt="Profile-Image">
+                        <a href="#"><i class="fas fa-pen stroke-transparent"></i></a>
+                    </div>
+                    <p id="name">Predrag Trikic<br><span id="email">ptrikic06@gmail.com</span></p>
+                    
+                    <div id="social-links">
+                        <a href="https://www.linkedin.com/in/predrag-trikic-6696a429/"><i class="fab fa-linkedin-in stroke-transparent"></i></a>
+                        <a href="https://www.xing.com/profile/Predrag_Trikic/"><i class="fab fa-xing stroke-transparent"></i></a>
+                        <a href="https://github.com/predragt565"><i class="fab fa-github stroke-transparent"></i></a>
+                    </div>
+                    
+                    <hr width="100%">
+                    <div id="about">
+                        <p style="display:inline;">About</p>
+                        
+                    </div>
+                    
+                    <p id="education">Ausbildung
+                        <strong>B.Sc. Wirtschaftswissenschaft </strong></p>
+                    <p id="more-about">Mehr über mich
+                        <span>Fachmann für Projektlogistik & Informationsmanagement mit über 20 Jahren Erfahrung</span>
+                    </p>
+                    
+                    
+                </div>
+            </div>
+
+            <!-- RIGHT JOB CARDS COLUMN -->
+            <div class="card-container">
+                
+                <div class="card-section">
+                    <p><i class="fas fa-bullhorn stroke-transparent""></i>&nbsp;&nbsp;&nbsp;Aktuelle</p>                
+                </div>
+
+                <div class="card-holder-section">
+                    
+                    <h3>
+                        <span>2025, Mär-Sep<br></span>
+                        Data Analyst Ausbildungskurs by DataPlus Qualidy<br>
+                        Python, Datenbanken & SQL, Statistische Methoden,<br> Daten Schnittstelle, Dashboards
+                    </h3>
+
+                </div>
+
+                <div class="card-section">
+                    <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Berufserfahrung (Top 4)</p>                
+                </div>
+                
+                <!-- Card 1 - Left aligned -->
+                <div class="card-holder">
+                    <div class="card">
+                        <div class="card-header">
+                            
+                            <div class="icon-group">
+                                <span>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/969/969088.png"
+                                            alt="Badge"
+                                            width="24"
+                                            height="24"
+                                            style="filter: brightness(0) invert(1);">
+                                </span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2>RAMS Operative/Analyst</h2>
+                            <div class="company">
+                                <img src="https://media.licdn.com/dms/image/v2/D4E0BAQEdq98NwB5bOg/company-logo_100_100/company-logo_100_100/0/1719815304684/rps_logo?e=2147483647&v=beta&t=7Nnq2ctOLIayS9LE7BS19phVXjW4XlvR0kf-6tOd50I" alt="RPS logo">
+                                <span>RPS Energy Ltd<br><small>Azerbaijan</small></span>
+                            </div>
+                            <p class="person-name"><strong></strong>
+                                <br>
+                                <span class="location">Sammlung, Verarbeitung und Analyse von Flächenbildern für 
+                                das Projekt der Risikosanierung kontaminierter Gebiete.</span></p>
+                            <div class="skills">2023 <span></span><div class="bar bar-4"></div></div>
+                            <p class="salary">  <strong> </strong></p>
+                        </div>
+                        
+                    </div>
+                </div>  <!--Card 1-->
+
+                <!-- Card 2 - Right aligned -->
+                <div class="card-holder">
+                    <div class="card card-alt">
+                        <div class="card-header">
+                            
+                            <div class="icon-group">
+                                <span>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/969/969088.png" loading="lazy" alt="Badge " title="Badge " width="24" height="24">
+                                </span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2>Information Management System Designer</h2>
+                            <div class="company">
+                                <img src="https://trustedjobs.eu/uploads/employer/logo/1923/B_S_Europe_logo_1571736162.png" alt="B&SE logo">
+                                <span2>B&S Europe<br><small>Remote</small></span2>
+                            </div>
+                            <p class="person-name"><strong></strong>
+                                <br>
+                                <span class="location">Entwicklung und Leitung des Ausbildungs- und Mentoring-Informationssystems für Notfallteams der libyschen Regierung. 
+                                    Das Projekt wurde von der EU-Delegation in Libyen unterstützt.</span></p>
+                            <div class="skills-alt">2020-2022 <span></span><div class="bar bar-3"></div></div>
+                            <p class="salary">  <strong> </strong></p>                            
+                        </div>
+                        
+                    </div>
+                </div>  <!--Card 2-->
+
+                <!-- Card 3 - Left aligned -->
+                <div class="card-holder">
+                    <div class="card">
+                        <div class="card-header">
+                            
+                            <div class="icon-group">
+                                <span>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/969/969088.png"
+                                            alt="Badge"
+                                            width="24"
+                                            height="24"
+                                            style="filter: brightness(0) invert(1);">
+                                </span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2>Data Manager</h2>
+                            <div class="company">
+                                <img src="https://media.licdn.com/dms/image/v2/C4E0BAQHiXRFpSQ_ToA/company-logo_100_100/company-logo_100_100/0/1630582522406/janusglobaloperations_logo?e=1754524800&v=beta&t=3EGA-Ab_8TvB4-BBJ8zH7mCMPeddRiW3JnxjCz8ni1c" alt="JGO logo">
+                                <span>Janus Global Operations<br><small>Libyen</small></span>
+                            </div>
+                            <p class="person-name"><strong></strong>
+                                <br>
+                                <span class="location">Entwicklung und Leitung von Training & Mentoring (T&M) Informationsmanagementsystems 
+                                    für ein durch das US-Außenministerium unterstütztes Projekt im Libyen. 
+                                    Das Projekt umfasste Schulung und technische Beratungsdienste für Notfallteams.</span></p>
+                            <div class="skills">2017-2019 <span></span><div class="bar bar-2"></div></div>
+                            <p class="salary">  <strong> </strong></p>
+                        </div>
+                        
+                    </div>
+                </div>  <!--Card 3-->
+
+                <!-- Card 4 - Right aligned -->
+                <div class="card-holder">
+                    <div class="card card-alt">
+                        <div class="card-header">
+                            
+                            <div class="icon-group">
+                                <span>
+                                    <img src="https://cdn-icons-png.flaticon.com/128/969/969088.png" loading="lazy" alt="Badge " title="Badge " width="24" height="24">
+                                </span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2>Sr Logistics Specialist</h2>
+                            <div class="company">
+                                <img src="https://media.licdn.com/dms/image/v2/C4E0BAQHiXRFpSQ_ToA/company-logo_100_100/company-logo_100_100/0/1630582522406/janusglobaloperations_logo?e=1754524800&v=beta&t=3EGA-Ab_8TvB4-BBJ8zH7mCMPeddRiW3JnxjCz8ni1c" alt="JGO logo">
+                                <span2>Janus Global Operations<br><small>Afghanistan</small></span2>
+                            </div>
+                            <p class="person-name"><strong></strong>
+                                <br>
+                                <span class="location">Entwicklung und Verwaltung einer kundenorientierten Feldaktivitätsüberwachung- und Berichterstattungssystem. 
+                                    Das Projekt wurde unter dem Amt für Politisch-Militärische Angelegenheit des US State Department durchgeführt.</span></p>
+                            <div class="skills-alt">2012-2017 <span></span><div class="bar bar-1"></div></div>
+                            <p class="salary">  <strong> </strong></p>                            
+                        </div>
+                        
+                    </div>
+                </div>  <!--Card 4-->
+
+            </div>
+
+        </div>
+    </div>
 </body>
-
 </html>
