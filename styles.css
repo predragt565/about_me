@@ -5,10 +5,12 @@ body {
     color: white;
     margin: 0;
     padding: 20px;
+    min-width: 580px;
 }
 
 .container {
     max-width: 1200px;
+    min-width: 580px;
     margin: auto;
 }
 
@@ -269,6 +271,16 @@ strong,span{
     margin: 10px 0;
 }
 
+.card-footer {
+    background-color: #2A2A33;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #ccc;
+    margin-top: 10px;
+}
+
 .person-name {
     font-size: 14px;
     margin: 8px 0;
@@ -276,7 +288,7 @@ strong,span{
 
 .location {
     color: #999;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .company {
@@ -292,7 +304,6 @@ strong,span{
     color: black;
 }
 
-
 .company img {
     width: 40px;     /* or any size you prefer */
     height: auto;    /* maintains aspect ratio */
@@ -300,24 +311,32 @@ strong,span{
     object-fit: contain;
 }
 
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
 .skills {
     font-size: 14px;
-    margin: 10px 0;
+    margin: 10px 0 4px;
+    display: flex;
+    justify-content: flex-start; /* default left-aligned */
 }
 
-.skills span {
+/*.skills span {
     float: right;
-}
+}*/
 
 .skills-alt {
     font-size: 14px;
-    margin: 10px 0;
+    margin: 10px 0 4px;
+    display: flex;
+    justify-content: flex-start; /* default left-aligned */
 }
 
-.skills-alt span {
+/*.skills-alt span {
     float: right;
-}
+}*/
 
 .bar {
     height: 6px;
@@ -367,21 +386,26 @@ strong,span{
     );
 }
 
-
+/* Bar alignment modifiers */
+.bar-pos-1 {
+    text-align: left;
+}
+.bar-pos-2 {
+    text-align: center;
+    padding-left: 25%;
+}
+.bar-pos-3 {
+    text-align: center;
+    padding-left: 50%;
+}
+.bar-pos-4 {
+    text-align: right;
+    padding-left: 75%;
+}
 
 .salary {
     font-size: 14px;
     margin: 10px 0;
-}
-
-.card-footer {
-    background-color: #2A2A33;
-    border-radius: 8px;
-    padding: 6px 10px;
-    font-size: 14px;
-    text-align: center;
-    color: #ccc;
-    margin-top: 10px;
 }
 
 .spacer {
@@ -406,3 +430,70 @@ strong,span{
     height: 20px;
     filter: brightness(0) invert(1); /* ensures the icon appears white on dark backgrounds */
 }
+
+
+/* 🔽 For tablets and below */
+@media (max-width: 768px) {
+  /*.card {
+    width: 100%;
+  }*/
+
+  .card-body h2 {
+    font-size: 16px;
+  }
+
+  .skills,
+  .skills-alt,
+  .person-name,
+  .salary,
+  .location,
+  .company span, span2 {
+    font-size: 13px;
+  }
+
+  .card-section p {
+    font-size: 1.2em;
+  }
+
+  .card-holder-section h3 {
+    font-size: 18px;
+  }
+
+  .card-holder-section span {
+    font-size: 16px;
+  }
+}
+
+/* 🔽 For mobile phones */
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .card-body h2 {
+    font-size: 15px;
+  }
+
+  .skills,
+  .skills-alt,
+  .person-name,
+  .salary,
+  .location,
+  .company span, span2 {
+    font-size: 12px;
+  }
+
+  .card-section p {
+    font-size: 1.1em;
+  }
+
+  .card-holder-section h3 {
+    font-size: 16px;
+  }
+
+  .card-holder-section span {
+    font-size: 14px;
+  }
+}
+
