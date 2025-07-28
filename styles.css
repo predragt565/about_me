@@ -5,12 +5,12 @@ body {
     color: white;
     margin: 0;
     padding: 20px;
-    min-width: 580px;
+    min-width: 480px;
 }
 
 .container {
     max-width: 1200px;
-    min-width: 580px;
+    min-width: 480px;
     margin: auto;
 }
 
@@ -231,7 +231,7 @@ strong,span{
     
 }
 .card > p > i{
-    font-size: 18px;
+    font-size:18px;
 }
 
 .card-alt {
@@ -432,47 +432,20 @@ strong,span{
 }
 
 
+/* Improved Media responsive layout and font size*/
 /* 🔽 For tablets and below */
 @media (max-width: 768px) {
-  /*.card {
-    width: 100%;
-  }*/
-
-  .card-body h2 {
-    font-size: 16px;
+  html {
+    font-size: 17px; /* slightly larger base */
   }
 
-  .skills,
-  .skills-alt,
-  .person-name,
-  .salary,
-  .location,
-  .company span, span2 {
-    font-size: 13px;
-  }
-
-  .card-section p {
-    font-size: 1.2em;
-  }
-
-  .card-holder-section h3 {
-    font-size: 18px;
-  }
-
-  .card-holder-section span {
-    font-size: 16px;
-  }
-}
-
-/* 🔽 For mobile phones */
-@media (max-width: 480px) {
   .card {
     width: 100%;
-    padding: 12px;
+    padding: 16px;
   }
 
   .card-body h2 {
-    font-size: 15px;
+    font-size: 1.3em;
   }
 
   .skills,
@@ -480,20 +453,139 @@ strong,span{
   .person-name,
   .salary,
   .location,
-  .company span, span2 {
-    font-size: 12px;
+  .company span,
+  .company span2 {
+    font-size: 1.05em;
   }
 
-  .card-section p {
+  #name,
+  #about p,
+  #more-about,
+  #education {
+    word-break: break-word;
     font-size: 1.1em;
   }
 
+  #education strong,
+  #more-about span {
+    word-break: break-word;
+    font-size: 1.1em;
+  }
+
+  .card-section p {
+    font-size: 1.5em;
+    line-height: 1.5;
+  }
+
   .card-holder-section h3 {
-    font-size: 16px;
+    font-size: 1.3em;
   }
 
   .card-holder-section span {
+    font-size: 1.15em;
+  }
+
+  .icon-group span {
+    font-size: 20px;
+  }
+
+  .badge {
     font-size: 14px;
+  }
+
+  .company img {
+    width: 32px;
   }
 }
 
+
+/* 🔽 For mobile phones */
+@media (max-width: 480px) {
+  html {
+    font-size: 18px; /* even larger base font for phones */
+  }
+
+  .card {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .card-body h2 {
+    font-size: 1.3em;
+  }
+
+  .about,
+  .skills,
+  .skills-alt,
+  .person-name,
+  .salary,
+  .location,
+  .company span,
+  .company span2 {
+    font-size: 1.1em;
+  }
+
+  .card-section p {
+    font-size: 1.5em;
+    line-height: 1.5;
+  }
+
+  .card-holder-section h3 {
+    font-size: 1.3em;
+  }
+
+  .card-holder-section span {
+    font-size: 1.1em;
+  }
+
+  .icon-group span {
+    font-size: 22px;
+  }
+
+  .badge {
+    font-size: 15px;
+  }
+
+  .company img {
+    width: 30px;
+  }
+}
+
+
+/* Media type responsive layout */
+
+/* Mobile layout: stack content vertically, remove sticky behavior, make everything scrollable */
+
+@media (max-width: 610px) {
+  .page-layout {
+    flex-direction: column;      /* stack profile above cards */
+    align-items: center;         /* center content horizontally */
+  }
+
+  .profile-container {
+    position: static;            /* disable sticky on mobile */
+    width: 100%;                 /* take full width */
+    min-width: unset;            /* remove desktop constraint */
+    height: auto;                /* allow full scroll */
+    margin-bottom: 20px;         /* spacing before card section */
+  }
+
+  .card-container {
+    width: 100%;
+    max-width: unset;
+    padding: 0 10px;             /* side padding for better spacing */
+  }
+
+  .card-section {
+    width: 100%;
+  }
+
+  .card-holder {
+    justify-content: center !important; /* center cards */
+  }
+
+  .card {
+    width: 100%;
+    /*max-width: 450px;            /* cap width for readability */
+  }
+}
